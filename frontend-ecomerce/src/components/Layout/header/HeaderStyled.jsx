@@ -7,20 +7,20 @@ export const Container = styled.div`
   z-index: 200;
   display: flex;
   align-items: center;
-  background-color: ${({ isUsedUser, isUsedPayment, hovered, headerColor }) =>
-    isUsedUser || isUsedPayment
+  background-color: ${({ $is_used_user, $is_used_payment, $hovered, $header_color }) =>
+    $is_used_user || $is_used_payment
       ? "#ffffff"
-      : hovered
+      : $hovered
       ? "#ffffff"
-      : headerColor};
-  box-shadow: ${({ isUsedBody, headerColor }) =>
-    isUsedBody
-      ? headerColor !== "transparent"
+      : $header_color};
+  box-shadow: ${({ $is_used_body, $header_color }) =>
+    $is_used_body
+      ? $header_color !== "transparent"
         ? "0px 0px 3px 2px #0000003b"
         : "0px 0px 0px 0px"
       : "0px 0px 3px 2px #0000003b"};
-  position: ${({ isUsedUser, isUsedBody, isUsedPayment }) =>
-    isUsedUser || isUsedBody || isUsedPayment ? "fixed" : "relative"};
+  position: ${({ $is_used_user, $is_used_body, $is_used_payment }) =>
+    $is_used_user || $is_used_body || $is_used_payment ? "fixed" : "relative"};
 
   .BoxTiltle {
     display: flex;
@@ -36,18 +36,12 @@ export const Container = styled.div`
       text-overflow: ellipsis;
       white-space: nowrap;
       letter-spacing: 0.8rem;
+      text-decoration: none;
       font-weight: 700;
-      :hover {
-        color: #000 !important;
-        text-decoration: none;
-      }
       @media (max-width: 768px) {
         font-size: 2.5rem;
       }
     }
-    /* @media (max-width: 768px) {
-      display: none;
-    } */
     @media (max-width: 768px) {
       width: 70%;
     }
@@ -60,11 +54,6 @@ export const Container = styled.div`
     gap: 2.5%;
     height: 100%;
     width: 50%;
-    /* @media (max-width: 768px) {
-      width: 50%;
-      padding-left: 5%;
-      gap: 10%;
-    } */
     @media (max-width: 768px) {
       display: none;
     }
@@ -106,6 +95,7 @@ export const Span = styled.span`
   text-transform: uppercase;
   position: relative;
   color: rgb(0, 0, 0);
+  cursor: pointer;
   :after {
     content: "";
     position: absolute;
@@ -115,7 +105,7 @@ export const Span = styled.span`
     bottom: 0;
     left: 0;
     transition: transform 0.25s ease-out;
-    background-color: ${({ isUsedBody, textColor }) =>
-      isUsedBody ? textColor : "#000"};
+    background-color: ${({ $is_used_body, $text_color }) =>
+      $is_used_body ? $text_color : "#000"};
   }
 `;

@@ -136,7 +136,7 @@ export default function AddressForm({ onFormValid }) {
                 name="nombre"
                 value={oneClients?.Personal_information?.nombre}
                 onChange={handleInputChange}
-                fullWidth
+                fullwidth
                 autoComplete="given-name"
                 variant="standard"
                 disabled
@@ -147,7 +147,7 @@ export default function AddressForm({ onFormValid }) {
                 id="lastName"
                 name="apellido"
                 value={oneClients?.Personal_information?.apellido}
-                fullWidth
+                fullwidth
                 autoComplete="family-name"
                 variant="standard"
                 onChange={handleInputChange}

@@ -135,7 +135,7 @@ const Contacto = () => {
                 <div className="card swiper-slide" key={index}>
                   <div className="image-content">
                     <span className="overlay"></span>
-                    <NewsImg img1={item.img1} img2={item.img2}></NewsImg>
+                    <NewsImg $img1={item.img1} $img2={item.img2}></NewsImg>
                   </div>
                   <div className="card-content">
                     <h2 className="name">{item.name}</h2>

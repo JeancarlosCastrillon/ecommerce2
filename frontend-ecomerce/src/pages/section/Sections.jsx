@@ -154,7 +154,7 @@ export default function Sections() {
 
   return (
     <PageSections ShadowColor={ShadowColor}>
-      <Header isUsedUser={userEnterUser} />
+      <Header $is_used_user={userEnterUser} />
       <h1 className="Tiltle">{page}</h1>
       {page === "Mujer" || page === "Hombre" ? (
         <div className="Category">

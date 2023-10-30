@@ -75,7 +75,7 @@ export const Card = styled.div`
   font-weight: bolder;
   font-size: 1rem;
   color: black;
-  :hover {
+  &:hover {
     border: 1px solid black;
   }
   .BoxImg {

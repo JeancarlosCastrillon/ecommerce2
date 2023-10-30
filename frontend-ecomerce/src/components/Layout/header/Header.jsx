@@ -12,14 +12,14 @@ export const pages = ["Inicio", "Mujer", "Hombre",
 
 const Header = ({
   products,
-  newProducts,
+  new_products,
   inTotal,
   newTotal,
   cantProducts,
   newCantProducts,
-  isUsedUser,
-  isUsedPayment,
-  isUsedBody,
+  $is_used_user,
+  $is_used_payment,
+  $is_used_body,
 }) => {
   const handleCloseNavMenu = () => { };
   const [hovered, setHovered] = useState(false);
@@ -57,11 +57,11 @@ const Header = ({
 
   return (
     <Container
-      isUsedUser={isUsedUser}
-      isUsedBody={isUsedBody}
-      isUsedPayment={isUsedPayment}
-      headerColor={headerColor}
-      hovered={hovered}
+      $is_used_user={$is_used_user}
+      $is_used_body={$is_used_body}
+      $is_used_payment={$is_used_payment}
+      $header_color={headerColor}
+      $hovered={hovered}
     >
       <div className="BoxTiltle">
         <a
@@ -70,7 +70,7 @@ const Header = ({
           onMouseLeave={handleMouseLeave}
           style={{
             color:
-              isUsedUser || isUsedPayment ? "#000000" : "#000000" && textColor,
+            $is_used_user || $is_used_payment || hovered ? "#000000" : textColor,
           }}
         >
           KALARY
@@ -84,7 +84,7 @@ const Header = ({
             onClick={handleCloseNavMenu}
             style={{
               color:
-                isUsedUser || isUsedPayment
+                $is_used_user || $is_used_payment
                   ? "#000"
                   : hovered
                     ? "#000"
@@ -94,11 +94,11 @@ const Header = ({
             <Cta>
               <Span
                 className="span"
-                textColor={textColor}
-                isUsedBody={isUsedBody}
+                $text_color={textColor}
+                $is_used_body={$is_used_body}
                 style={{
                   color:
-                    isUsedUser || isUsedPayment
+                    $is_used_user || $is_used_payment
                       ? "#000"
                       : hovered
                         ? "#000"
@@ -114,22 +114,22 @@ const Header = ({
       <div className="BoxUser">
         <CarBuys
           allProducts={products}
-          setAllProducts={newProducts}
+          setAllProducts={new_products}
           total={inTotal}
           setTotal={newTotal}
           countProducts={cantProducts}
           setCountProducts={newCantProducts}
           color={textColor}
           hover={hovered}
-          pageUsed={isUsedUser}
-          pagePayment={isUsedPayment}
+          pageUsed={$is_used_user}
+          pagePayment={$is_used_payment}
         />
         <div className="IconUser">
           <Link to="/user">
             <BiUser
               style={{
                 fill:
-                  isUsedUser || isUsedPayment
+                  $is_used_user || $is_used_payment
                     ? "#000"
                     : hovered
                       ? "#000"

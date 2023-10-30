@@ -52,7 +52,7 @@ export const Card = styled.div`
   width: 100%;
   height: 100%;
   cursor: pointer;
-  :hover {
+  &:hover {
     border: 1px solid black;
   }
 
@@ -62,9 +62,9 @@ export const Card = styled.div`
     height: 90%;
     img {
       height: 100%;
-      transition: transform 900ms;
-      :hover {
-        transform: scale(1.2);
+      transition: transform .4s;
+      &:hover {
+        transform: scale(1.08);
       }
     }
   }

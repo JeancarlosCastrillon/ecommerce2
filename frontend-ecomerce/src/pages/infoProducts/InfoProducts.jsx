@@ -102,7 +102,7 @@ const InfoProducts = () => {
               </ModalContent>
             </Modal>
             <MainDiv>
-              <Header isUsedUser={userEnterUser} />
+              <Header $is_used_user={userEnterUser} />
               <BoxMain>
                 <Section1>
                   <Image onClick={handleOpenModal} src={product.img_video} alt={product.name}></Image>

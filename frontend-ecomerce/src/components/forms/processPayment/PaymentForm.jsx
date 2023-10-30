@@ -14,16 +14,16 @@ export default function PaymentForm() {
       </Typography>
       <Grid container spacing={3}>
         <Grid item xs={12} md={6}>
-          <TextField required id="cardName" label="Nombre de la tarjeta" fullWidth autoComplete="cc-name" variant="standard" />
+          <TextField required id="cardName" label="Nombre de la tarjeta" fullwidth autoComplete="cc-name" variant="standard" />
         </Grid>
         <Grid item xs={12} md={6}>
-          <TextField required id="cardNumber" label="Numero de tarjeta" fullWidth autoComplete="cc-number" variant="standard" />
+          <TextField required id="cardNumber" label="Numero de tarjeta" fullwidth autoComplete="cc-number" variant="standard" />
         </Grid>
         <Grid item xs={12} md={6}>
-          <TextField required id="expDate" label="Fecha de expiración" fullWidth autoComplete="cc-exp" variant="standard" />
+          <TextField required id="expDate" label="Fecha de expiración" fullwidth autoComplete="cc-exp" variant="standard" />
         </Grid>
         <Grid item xs={12} md={6}>
-          <TextField required id="cvv" label="CVV" helperText="Last three digits on signature strip" fullWidth autoComplete="cc-csc" variant="standard" />
+          <TextField required id="cvv" label="CVV" helperText="Last three digits on signature strip" fullwidth autoComplete="cc-csc" variant="standard" />
         </Grid>
         <Grid item xs={12}>
           <FormControlLabel control={<Checkbox color="secondary" name="saveCard" value="yes" />} label="Recordar los datos de la tarjeta de crédito para la próxima vez" />

@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const AutoPLay = ({ children }) => {
-  const [activeSlide, setActiveSlide] = useState(0);
+  const [, setActiveSlide] = useState(0);
 
   useEffect(() => {
     const totalSlides = React.Children.count(children);
@@ -34,7 +35,7 @@ const AutoPLay = ({ children }) => {
     <div
       style={{
         overflow: "hidden",
-        height: "850px",
+        height: "100%",
         position: "sticky",
         top: "0",
         zIndex: "-100",

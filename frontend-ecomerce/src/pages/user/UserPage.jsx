@@ -39,7 +39,7 @@ const UserPage = () => {
         <Loading />
       ) : (
         <BoxUser>
-          <Header isUsedUser={userEnterUser} />
+          <Header $is_used_user={userEnterUser} />
           <NavVertical />
           <FooterUser />
         </BoxUser>

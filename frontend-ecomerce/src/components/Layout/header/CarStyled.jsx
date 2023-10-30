@@ -153,19 +153,18 @@ export const Car = styled.div`
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    * {
+      button svg {
+        font-size: 2rem;
+      }
+    }
   }
 
   .btnAdd {
     border: none;
     background: none;
-    .iconAdd {
-      transform: scale(1.2);
-      transition: 0.2s linear;
-    }
-    .iconAdd:hover {
-      transform: scale(1.4);
-    }
-    :hover > .iconAdd path {
+    cursor: pointer;
+    &:hover > .iconAdd path {
       color: rgb(7, 168, 55);
     }
   }
@@ -174,14 +173,8 @@ export const Car = styled.div`
     width: 100%;
     border: none;
     background: none;
-    .iconDell {
-      transform: scale(1.2);
-      transition: 0.2s linear;
-    }
-    .iconDell:hover {
-      transform: scale(1.4);
-    }
-    :hover > .iconDell path {
+    cursor: pointer;
+    &:hover > .iconDell path {
       color: rgb(168, 7, 7);
     }
   }
@@ -190,14 +183,8 @@ export const Car = styled.div`
     width: 100%;
     border: none;
     background: none;
-    .iconDele {
-      transform: scale(1.2);
-      transition: 0.2s linear;
-    }
-    .iconDele:hover {
-      transform: scale(1.4);
-    }
-    :hover > .iconDele path {
+    cursor: pointer;
+    &:hover > .iconDele path {
       fill: rgb(168, 7, 7);
     }
   }

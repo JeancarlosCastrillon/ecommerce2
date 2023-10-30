@@ -215,7 +215,7 @@ export default function NavHorizontal(props) {
                 </Button>
               </CustomTabPanel>
               <CustomTabPanel value={value} index={1}>
-                <Img sx={{ width: "100%" }} src={bgr} alt="" />
+                <Img style={{ width: "100%" }} src={bgr} alt="" />
                 <h4>Aún no tienes compras en tienda</h4>
                 <span>
                   Pero puedes hacer tu pedido online ¡y te lo mandamos a casa!

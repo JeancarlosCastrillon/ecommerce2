@@ -129,7 +129,7 @@ export const ColorProducts = styled.div`
       height: 100%;
       object-fit: cover;
     }
-    :hover {
+    &:hover {
       border: 1.5px solid #000000;
       cursor: pointer;
     }
@@ -172,11 +172,12 @@ export const Sizes = styled.ul`
     font-weight: 300;
     cursor: pointer;
     font-size: 1rem;
+    transition: all .3s ease-in-out;
     box-shadow: 0px 0px 1px #00000044;
-    :hover {
+    &:hover {
       border: 1.5px solid #000000;
     }
-    :focus {
+    &:focus {
       border: 1.5px solid #000000;
     }
   }
@@ -199,13 +200,14 @@ export const Buys = styled.button`
   padding: 0.7em 1.7em;
   font-size: 17px;
   background: transparent;
+  cursor: pointer;
   border: 1px solid #000000;
 
-  :active {
+  &:active {
     color: #000000;
   }
 
-  :before {
+  &:before {
     content: "";
     position: absolute;
     left: 50%;
@@ -219,7 +221,7 @@ export const Buys = styled.button`
     z-index: -1;
   }
 
-  :after {
+  &:after {
     content: "";
     position: absolute;
     left: 55%;
@@ -233,20 +235,20 @@ export const Buys = styled.button`
     z-index: -1;
   }
 
-  :hover {
+  &:hover {
     border: none;
     color: #ffffff;
     border: 1px solid #000000;
   }
 
-  :hover:before {
+  &:hover&:before {
     border: none;
     top: -35%;
     background-color: #000000;
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
   }
 
-  :hover:after {
+  &:hover&:after {
     border: none;
     top: -45%;
     background-color: #000000;

@@ -38,13 +38,15 @@ export default function Body() {
         newTotal={setTotal}
         cantProducts={countProducts}
         newCantProducts={setCountProducts}
-        isUsedBody={userEnter}
+        $is_used_body={userEnter}
       />
+      <div style={{height:"850px"}}>
         <DemoAutoPlay>
           <img width={"100%"} src={SliderImg1} style={{margin:"0", padding: "0"}} alt="" />
           <img width={"100%"} src={damaNegro} style={{margin:"0", padding: "0"}} alt="" />
           <img width={"100%"} src={ropaNegro} style={{margin:"0", padding: "0"}} alt="" />
         </DemoAutoPlay>
+        </div>
 
       <IndexCategory />
       <ProductList

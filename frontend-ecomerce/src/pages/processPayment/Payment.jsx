@@ -51,7 +51,7 @@ const UserPage = () => {
         </>
       ) : (
         <>
-          <Header isUsedPayment={UserPage} />
+          <Header $is_used_payment={UserPage} />
           <FormUserPayment />
           <FooterUser />
         </>

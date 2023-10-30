@@ -49,18 +49,15 @@ function a11yProps(index) {
   };
 }
 
-// eslint-disable-next-line no-unused-vars
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
-
 export default function NavVertical() {
   const [value, setValue] = useState(0);
-  const [error, setError] = useState();
+  const [, setError] = useState();
   const [avatar, setAvatar] = useState({
     avatar: "",
   });
   const urlBackend = import.meta.env.VITE_BACKEND_URL;
 
-  const handleChange = (event, newValue) => {
+  const handleChange = (e, newValue) => {
     setValue(newValue);
   };
 

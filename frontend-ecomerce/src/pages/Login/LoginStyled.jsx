@@ -58,11 +58,13 @@ export const Section2 = styled.div`
 `;
 
 //********************************
+
 //Componentes Secundarios
 
 export const LoginBox = styled.div`
   box-sizing: border-box;
   width: 50%;
+  height: 60%;
   padding: 5%;
   background: #fff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
@@ -77,6 +79,11 @@ export const LoginBox = styled.div`
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 2px;
+  }
+
+  .Redirects {
+    margin-top: 1rem;
+    gap: 1rem;
   }
 
   form a {
@@ -164,7 +171,7 @@ export const LoginBoxInput = styled.div`
   input {
     width: 100%;
     padding: 15px 0;
-    font-size: 16px;
+    font-size: .85rem;
     color: #000000;
     margin-bottom: 40px;
     border: none;
@@ -192,6 +199,7 @@ export const LoginBoxInput = styled.div`
 `;
 
 export const BoxButton = styled.div`
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -245,7 +253,7 @@ export const Redes = styled.div`
   position: relative;
   top: 40px;
 
-  .socail-media {
+  .social-media {
     display: flex;
     align-items: center;
     align-content: center;
@@ -254,7 +262,7 @@ export const Redes = styled.div`
     list-style: none;
   }
 
-  .socail-media li a {
+  .social-media li a {
     width: 35px;
     height: 35px;
     background-color: #000000;
@@ -268,12 +276,12 @@ export const Redes = styled.div`
     border: 1px solid #000000;
   }
 
-  .socail-media li a:hover {
+  .social-media li a:hover {
     background-color: #ffffff;
     border: 1px solid #000000;
   }
 
-  .socail-media li a svg {
+  .social-media li a svg {
     width: 18px;
     height: 18px;
     -o-object-fit: contain;
@@ -282,7 +290,7 @@ export const Redes = styled.div`
       brightness(108%) contrast(105%);
   }
 
-  .socail-media li a:hover svg {
+  .social-media li a:hover svg {
     animation: fadeInLeft 0.3s linear both;
     filter: invert(52%) sepia(85%) saturate(2286%) hue-rotate(54deg)
       brightness(0%) contrast(100%);

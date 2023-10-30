@@ -12,13 +12,13 @@ export const Title = styled.div`
 
 export const NewsImg = styled.div`
   transition: all 0.2s ease-in-out;
-  background-image: url(${({ img1 }) => img1});
+  background-image: url(${({ $img1 }) => $img1});
   background-size: cover;
   height: 30rem;
   width: 100%;
   border-radius: 5px 5px 0 0;
-  :hover {
-    background-image: url(${({ img2 }) => img2});
+  &:hover {
+    background-image: url(${({ $img2 }) => $img2});
   }
 `;
 
